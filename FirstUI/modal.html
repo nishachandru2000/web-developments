@@ -35,20 +35,22 @@
           <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
         </div>
         <div class="modal-body" style="padding:40px 50px;">
-          <form role="form">
-            <div class="form-group">
+          <!-- <form role="form"> -->
+            <!-- <div class="form-group"> -->
               <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
-              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
-            </div>
-            <div class="form-group">
-              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
-              <input type="text" class="form-control" id="psw" placeholder="Enter password">
-            </div>
+              <label for="psw"><span class="glyphicon glyphicon-eye-open" style="margin-left:225px;"></span> Password </label>
+              <br>
+              <input type="text" id="usrname" placeholder="Enter email">
+              <input type="text" id="psw" style="margin-left:130px;" placeholder="Enter password">
+
+            <!-- </div> -->
+            <!-- <div class="form-group"> -->
+            <!-- </div> -->
             <div class="checkbox">
               <label><input type="checkbox" value="" checked>Remember me</label>
             </div>
               <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
-          </form>
+          <!-- </form> -->
         </div>
         <div class="modal-footer">
           <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
@@ -63,9 +65,16 @@
  
 <script>
 $(document).ready(function(){
-  $("#myBtn").click(function(){
+    console.log("nisha");
+ 
+    $("#myBtn").click(function()
+  {
+   
+    console.log("clicked");
+    
     $("#myModal").modal();
   });
+
 });
 </script>
 
